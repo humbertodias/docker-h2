@@ -1,8 +1,9 @@
 FROM adoptopenjdk:latest
-ARG RELEASE_DATE=2019-03-13
+ARG RELEASE_DATE=2022-06-13
+ARG H2_VERSION=2.1.214
 ENV H2_DATA /home/h2
 
-RUN curl -s http://www.h2database.com/h2-$RELEASE_DATE.zip | jar xv
+RUN curl -kvL https://github.com/h2database/h2database/releases/download/version-$H2_VERSION/h2-$RELEASE_DATE.zip | jar xv
 
 RUN useradd --user-group --system --create-home --no-log-init h2
 USER h2
