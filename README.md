@@ -1,3 +1,5 @@
+[![ci-docker](https://github.com/humbertodias/docker-h2/actions/workflows/docker.yml/badge.svg)](https://github.com/humbertodias/docker-h2/actions/workflows/docker.yml)
+
 # docker-h2
 
 Docker container with H2 Server + Console
