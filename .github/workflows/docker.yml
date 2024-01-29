@@ -1,4 +1,4 @@
-name: ci-dockeer
+name: ci-docker
 on:
   pull_request:
     branches:
