@@ -1,6 +1,6 @@
 FROM adoptopenjdk:latest
-ARG RELEASE_DATE=2023-09-17
-ARG H2_VERSION=2.2.224
+ARG RELEASE_DATE=2024-08-11
+ARG H2_VERSION=2.3.232
 ENV H2_DATA /home/h2
 
 RUN curl -kvL https://github.com/h2database/h2database/releases/download/version-$H2_VERSION/h2-$RELEASE_DATE.zip | jar xv
